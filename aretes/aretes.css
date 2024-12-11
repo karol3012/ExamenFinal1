@@ -1,3 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo h1 {
+  padding: 10px;
+  font-size: 24px; 
+  font-weight: bold;
+}
+
 #productos {
     text-align: center; 
   }
@@ -29,3 +42,33 @@
   .producto a:hover{
     color: #eae8e8;
   }
+  footer{
+    background-color: rgb(247, 240, 240);
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 375px) {
+    .logo h1 {
+        font-size: 20px; 
+    }
+  
+    .producto {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+  
+    .productos {
+        justify-content: center; 
+    }
+  
+    footer {
+        height: auto;
+        padding: 20px; 
+    }
+  }
+
+  
