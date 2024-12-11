@@ -1,31 +1,81 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo h1 {
+  padding: 10px;
+  font-size: 24px; 
+  font-weight: bold;
+}
+
 #productos {
-    text-align: center; 
+  text-align: center; 
+}
+
+.productos {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+}
+
+.producto:hover {
+  background-color: #f4cf76;
+}
+
+.producto {
+  width: 30%; 
+  margin: 20px; 
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.producto a {
+  text-decoration: none;
+  color: #333;
+}
+
+.producto a:hover {
+  color: #eae8e8;
+}
+
+footer {
+  background-color: rgb(247, 240, 240);
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries para Responsividad en iPhone SE */
+@media (max-width: 375px) {
+  .logo h1 {
+      font-size: 20px; 
   }
-  
-  .productos {
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-  }
-  .producto:hover{
-    background-color: #f4cf76;
-  }
+
   .producto {
-    width: 30%; 
-    margin: 20px; 
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-sizing: border-box; 
+      width: 90%; 
+      margin: 10px auto; 
   }
+
+  .productos {
+      justify-content: center; 
+  }
+
+  footer {
+      height: auto; 
+      padding: 20px; 
+  }
+}
+ 
   
-  .producto img {
-    max-width: 100%;
-    height: 600px;
-  }
-  .producto a{
-    text-decoration: none;
-    color: #333;
-  }
-  .producto a:hover{
-    color: #eae8e8;
-  }
